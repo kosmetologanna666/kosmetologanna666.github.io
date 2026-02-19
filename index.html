@@ -29,10 +29,32 @@
         h1 { 
             font-size: 2.5rem; 
             text-align: center; 
-            margin-bottom: 30px; 
+            margin-bottom: 20px; 
             padding-bottom: 15px; 
             border-bottom: 3px solid #e74c3c; 
         }
+
+        /* ✅ NEW: hero image */
+        .hero-media{
+            margin: 18px 0 26px;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 6px 22px rgba(0,0,0,0.12);
+            background: #fff;
+        }
+        .hero-media img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .hero-media figcaption{
+            padding: 12px 14px;
+            font-size: 0.95rem;
+            color: #555;
+            background: #f6f7f9;
+            border-top: 1px solid #e9ecef;
+        }
+
         h2 { 
             font-size: 1.8rem; 
             margin-top: 40px; 
@@ -100,12 +122,20 @@
             .container { padding: 20px; }
             h1 { font-size: 2rem; }
             h2 { font-size: 1.5rem; }
+            .hero-media figcaption{ font-size: 0.9rem; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🚨 Юлия Олехова (Петровых) — косметолог без медицинского образования: полное расследование</h1>
+
+        <!-- ✅ NEW: image block -->
+        <figure class="hero-media">
+            <!-- поменяй путь, если нужно: images/1.jpg -->
+            <img src="1.jpg" alt="Фото до и после (иллюстрация к материалу)">
+            <figcaption>Иллюстрация: А это дело рук самоучки Олеховой Ю.С.</figcaption>
+        </figure>
         
         <div class="warning">
             ⚠️ Внимание: информация основана на открытых данных и отзывах пострадавших. Цель — предупредить о рисках и защитить здоровье людей.
